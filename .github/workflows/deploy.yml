@@ -11,5 +11,5 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Deploy project to CDN
-        run: sshpass -p "PHLkcFKA}q5K" rsync --compress ./* test@173.230.147.195:/home/test/
+        run: ls -la /usr/bin/sshpass
 
