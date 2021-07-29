@@ -11,8 +11,5 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Deploy project to CDN
-      - run: ftp -n 173.230.147.195 << EOF
-      - run: quote USER test
-      - run: quote PASS PHLkcFKA}q5K
-      - run: ls -la
+        run: lftp
 
