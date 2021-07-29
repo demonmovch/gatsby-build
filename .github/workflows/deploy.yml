@@ -16,6 +16,6 @@ jobs:
         with:
             server: 173.230.147.195
             username: test
-            password: PHLkcFKA}q5K
+            password: ${{ secrets.password }}
         
 
