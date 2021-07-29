@@ -8,8 +8,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - name: Deploy project to CDN
-        run: lftp
+      - name: Get latest code
+        uses: actions/checkout@v2
+      
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+            server: 173.230.147.195
+            username: test
+            password: PHLkcFKA}q5K
+        
 
